@@ -1,11 +1,31 @@
-.banner {
+.banner{
     display: flex;
     box-sizing:border-box;
     padding: 20px;
     margin: 10px;
     width: 400px;
     height: 250px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
+    background-color:blanchedalmond;
+    border: 1px solid
     flex-direction: column;
 }
+
+#sobre {
+    font-stretch:expanded;
+    text-decoration:solid;
+    font-size: 20px;
+    font-stretch: 20px;
+    color:brown;
+    text-align:left;
+    background-color:antiquewhite;
+}
+
+h1 {
+    color: brown;
+    text-align:justify;
+}
+
+a {
+    color:brown
+}
+
