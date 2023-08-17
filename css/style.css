@@ -1,33 +1,132 @@
-.banner{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    overflow: hidden;
+}
+
+
+
+.background{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../images//background.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+   
+}
+
+header{
     display: flex;
-    box-sizing:border-box;
-    padding: 20px;
-    margin: 10px;
-    width: 400px;
-    height: 250px;
-    background-color:blanchedalmond;
-    border: 1px solid;
-    flex-direction: column;
+    justify-content: space-around;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;
+   
+    
 }
 
-#sobre {
-    font-stretch:expanded;
-    text-decoration:solid;
-    font-size: 20px;
-    font-stretch: 20px;
-    color:brown;
-    text-align:center;
-    background-color:pink
+.cabeçalho-link{
+    display: flex;
+    gap: 3rem;
+    font-weight: 300;
+    cursor: pointer;  
 }
 
-#midias {
-    background-color: antiquewhite;
+.cabeçalho-link a{
+    color:beige;
+    font-size: 12px;
 }
 
-a {
-    color:brown
+.cabeçalho-link a:hover{
+    color:pink;
+    transition: 0.3s all;
 }
 
-h5 {
-    background-color:lightpink;
+.logo i{
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 1px solid pink;
+    color:pink;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    cursor: pointer;
 }
+
+
+button{
+    color:pink;
+    background: transparent;
+    border:solid 1px pink;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    width: 150px;
+}
+
+button:hover{
+    background-color:pink;
+    color: beige;
+    transition: 0.5s;
+}
+
+.container-text{
+    padding: 150px 0 0 130px;
+}
+
+.text h3{
+    color:beige;
+    font-size: 15px;
+}
+
+.text h1{
+    color:beige;
+    margin-top: 10px;
+}
+
+.text span{
+    color:pink; 
+}
+
+.text p{
+    color:beige;
+    font-weight: 500;
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+.redes-social{
+    margin-top: 10px;
+}
+
+.redes-social a{
+    color:pink;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.btn{
+    margin-top: 15px;
+}
+
+@media screen and (max-width:600px){
+    .cabeçalho-link {
+        display: none;
+    }
+    
+}
+
